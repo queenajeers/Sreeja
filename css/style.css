@@ -1,0 +1,121 @@
+:root {
+  --main-color-1: #a2303e;
+  --main-color-2: #922c38;
+  --main-color-3: #582c31;
+  --main-color-4: #851923;
+  --white: rgb(255, 255, 255);
+}
+::selection {
+  background-color: var(--main-color-3); /* Highlight background color */
+  color: white;
+}
+
+#greeting1 {
+  font-size: 4rem;
+  color: var(--main-color-1);
+  font-family: "Pacifico", serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  transform: rotate(-2deg);
+}
+
+#header {
+  font-size: 1rem;
+  color: var(--main-color-1);
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.space {
+  height: 32px;
+}
+
+.shortLine {
+  width: 500px;
+  height: 2px;
+  background-color: var(--main-color-1);
+
+  margin: auto;
+}
+
+.introPara {
+  font-size: 1rem;
+  width: 400px;
+  text-align: center;
+  margin: 1rem auto;
+  color: var(--main-color-1);
+  color: var(--main-color-1);
+}
+
+.thickText {
+  font-weight: 900;
+  font-style: normal;
+  font-style: italic;
+  margin: 0 0.5rem;
+}
+.floating-image {
+  position: absolute;
+
+  z-index: -100;
+}
+.floating-image img {
+  width: 100px;
+}
+
+.content {
+  padding: 1rem 0rem;
+}
+
+.underlined {
+  position: relative;
+  margin-right: 1rem;
+}
+.underlined:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  height: 10px;
+  width: 100%;
+  border: solid 3px var(--white);
+  border-color: var(--white) transparent transparent transparent;
+  border-radius: 50%;
+}
+.small {
+  font-size: 60%;
+}
+.big {
+  font-size: 200%;
+}
+
+.topicHeadingMain {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  color: var(--main-color-1);
+  font-weight: 200;
+  font-family: "Pacifico", serif;
+}
+
+.topicHeadingMain img {
+  width: 70px;
+}
+
+.topicHeadingContent {
+  font-size: 1.1rem;
+  width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+  color: var(--main-color-1);
+}
+
+.nicky-ant {
+  width: 70%;
+}

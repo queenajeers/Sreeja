@@ -1,0 +1,71 @@
+:root {
+  --main-color-1: #a2303e;
+  --main-color-2: #922c38;
+  --main-color-3: #582c31;
+  --main-color-4: #851923;
+  --white: rgb(255, 255, 255);
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  height: 300px;
+  margin: 50px auto;
+  border: 2px solid #444;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.character {
+  position: absolute;
+  bottom: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: all 0.5s ease-in-out;
+}
+#boy {
+  left: 20px;
+}
+#girl {
+  right: 20px;
+}
+.ripples {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 0, 255, 0.2);
+  animation: rippleEffect 1.5s infinite;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@keyframes rippleEffect {
+  0% {
+    transform: scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+.text {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--main-color-1);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: var(--main-color-2);
+}
