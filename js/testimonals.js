@@ -40,7 +40,46 @@ const testimonials = [
     text: "🤌🏻 The way we become a mental coachs , when one of us goes down",
   },
   {
-    text: "Tea time walk at your attha's house, there's something magical about that day!",
+    text: "☕️ Tea time walk at your attha's house, there's something magical about that day!",
+  },
+  {
+    text: " 👯‍♀️ Sometimes you become my bestie to just share things in life",
+  },
+  {
+    text: "We can both be vulnerable with each other, knowing that neither of us will judge",
+  },
+  {
+    text: "I love your motherly love for your brother! it just wants be to become your brother!",
+  },
+  {
+    text: "😍 I love your moody mornings—they're just so cute!",
+  },
+  {
+    text: "All our times in Vikarabad fulfilled my dream of having a partner with whom time just flies in nature.",
+  },
+  {
+    text: "Girl, I love how we create random scenarios and just laugh our hearts out!",
+  },
+  {
+    text: "You are my besssstttt friend!",
+  },
+  {
+    text: "I love your taste in almost eveyrthing! The way you choose, it's real WISDOM girl!",
+  },
+  {
+    text: "Sreeju, you are the best listner when I talk! I love how you remeber every detail of it",
+  },
+  {
+    text: "I love that we can talk meaningful, deep, silly, almost anything!",
+  },
+  {
+    text: "I love when you said, 'Lets count our blessings', when I was talking about our worries! I love it",
+  },
+  {
+    text: "I love that you cheer on my accomplishments as your own",
+  },
+  {
+    text: "Your laugh is contagious man!",
   },
 ];
 
