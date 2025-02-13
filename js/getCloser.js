@@ -13,6 +13,9 @@ let messages = [
 ];
 
 let message_index = 0;
+let girlMovePixels = window.innerWidth * 0.03; // Move by 1% of screen width for consistency
+let girlCurrentPosition = 0; // Track girl's movement
+
 function moveGirl() {
   let girlPosition = girl.getBoundingClientRect().left;
   let boyPosition = boy.getBoundingClientRect().left;
@@ -20,14 +23,16 @@ function moveGirl() {
 
   console.log("Distance:", distance);
 
-  if (distance > 100) {
-    let currentRight = parseInt(getComputedStyle(girl).right) || 60;
-    girl.style.right = `${currentRight + 60}px`;
+  if (distance > 80) {
+    // Stop when the girl is close enough (~80px)
+    girlCurrentPosition -= girlMovePixels; // Move left
+    girl.style.transform = `translateX(${girlCurrentPosition}px)`;
+
     message.textContent = messages[message_index % messages.length];
     message_index++;
   } else {
-    boy.src = "./public/happy.png";
     message.textContent = "Happiness unlocked!";
+    boy.src = "./public/happy.png";
     startConfetti();
   }
 }

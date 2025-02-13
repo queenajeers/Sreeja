@@ -1,0 +1,59 @@
+:root {
+  --main-color-1: #a2303e;
+  --main-color-2: #922c38;
+  --main-color-3: #582c31;
+  --main-color-4: #851923;
+  --white: rgb(255, 255, 255);
+}
+.songsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container2 {
+  display: flex;
+  gap: 20px;
+}
+.card {
+  width: 200px;
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.lyrics {
+  color: var(--main-color-1);
+  height: 100px;
+  overflow: hidden;
+  border: 1px solid #ccc;
+  width: 100%;
+  text-align: left;
+  padding: 5px;
+  white-space: pre-line;
+  opacity: 0;
+  text-align: center;
+  transition: opacity 0.5s ease-in-out;
+}
+.song-title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.controls {
+  margin-top: 10px;
+  display: flex;
+  gap: 30px;
+}
+.controls img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
