@@ -1,0 +1,82 @@
+:root {
+  --main-color-1: #a2303e;
+  --main-color-2: #922c38;
+  --main-color-3: #582c31;
+  --main-color-4: #851923;
+  --white: rgb(255, 255, 255);
+}
+
+.testimonial-container {
+  position: relative;
+  height: 800px;
+  width: 70%;
+  overflow: hidden;
+  background: var(--main-color-3);
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 20;
+}
+
+.scroll-container {
+  position: absolute;
+  width: 100%;
+  animation: scrollUp 100s linear infinite;
+}
+
+.testimonial-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* gap: 40px; */
+  padding: 40px;
+  margin-bottom: 40px;
+}
+
+.testimonial-card {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+  margin: 10px;
+  position: relative;
+}
+
+/* Remove the transformX translations that were causing overlap */
+.testimonial-card:nth-child(3n) {
+  margin-left: 40px;
+}
+
+.testimonial-card:nth-child(3n + 1) {
+  margin-right: 40px;
+}
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #2d3748;
+  font-style: italic;
+  position: relative;
+  padding-left: 20px;
+}
+
+.testimonial-text::before {
+  content: '"';
+  font-size: 48px;
+  color: #e2e8f0;
+  position: absolute;
+  left: -10px;
+  top: -20px;
+  font-family: Georgia, serif;
+}
+
+@keyframes scrollUp {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}

@@ -13,18 +13,26 @@ let messages = [
 ];
 
 let message_index = 0;
-let girlMovePixels = window.innerWidth * 0.03; // Move by 1% of screen width for consistency
+let girlMovePixels = window.innerWidth * 0.03; // Move by 3% of screen width for consistency
 let girlCurrentPosition = 0; // Track girl's movement
+const stopDistance = 100; // Minimum distance to maintain
+
+let isCooldown = false; // Cooldown flag
+const cooldownTime = 200; // Set cooldown time in milliseconds (e.g., 2 seconds)
 
 function moveGirl() {
+  if (isCooldown) return; // Prevent execution if in cooldown
+
+  isCooldown = true; // Activate cooldown
+
   let girlPosition = girl.getBoundingClientRect().left;
   let boyPosition = boy.getBoundingClientRect().left;
   let distance = girlPosition - boyPosition;
 
   console.log("Distance:", distance);
 
-  if (distance > 80) {
-    // Stop when the girl is close enough (~80px)
+  if (distance > stopDistance + 10) {
+    // Ensure she doesn't go past the stopDistance
     girlCurrentPosition -= girlMovePixels; // Move left
     girl.style.transform = `translateX(${girlCurrentPosition}px)`;
 
@@ -35,6 +43,11 @@ function moveGirl() {
     boy.src = "./public/happy.png";
     startConfetti();
   }
+
+  // Reset cooldown after `cooldownTime`
+  setTimeout(() => {
+    isCooldown = false;
+  }, cooldownTime);
 }
 
 function startConfetti() {

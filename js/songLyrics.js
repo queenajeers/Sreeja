@@ -11,11 +11,11 @@ const songs = [
   {
     id: 1,
     icon: "./public/musical-notes.png",
-    title: "You Are The Reason",
+    title: "My love for you",
     lyrics:
-      "\n\nHey Sreeju this is for you...\n\nI'd climb every mountain\n\n\n\nAnd swim every ocean\n\nJust to be with you\n\nAnd fix what I've broken\n\nCause I need you to see\n\n\n\nThat you are the reason",
-    speed: 100,
-    src: "./songs/YouAreTheReason.mp3",
+      "\n\n\nHold me now, touch me now\n\nI don't want to live without you\n\n… Nothing's gonna change my love for you\nYou oughta know by now how much I love you\nOne thing you can be sure of\nI'll never ask for more than your love\n… Nothing's gonna change my love for you\nYou oughta know by now how much I love you\nThe world may change my whole life through\nBut nothing's gonna change my love for you",
+    speed: 92,
+    src: "./songs/NothingsGonnaChangeMyLoveforYou.mp3",
   },
 
   {
