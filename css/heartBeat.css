@@ -1,0 +1,51 @@
+:root {
+  --main-color-1: #a2303e;
+  --main-color-2: #922c38;
+  --main-color-3: #582c31;
+  --main-color-4: #851923;
+  --white: rgb(255, 255, 255);
+}
+
+.heartBeat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--main-color-1);
+  text-align: center;
+}
+.heart {
+  font-size: 4rem;
+  color: red;
+  animation: heartbeat 1.2s infinite ease-in-out;
+}
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+.bpm {
+  font-size: 2rem;
+  margin: 20px 0;
+}
+.buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.buttons button:hover {
+  background-color: darkred;
+}
+.canvasBeat {
+  border: 1px solid white;
+  margin-top: 20px;
+  background-color: black;
+}

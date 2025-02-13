@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/getCloser.css" />
     <link rel="stylesheet" href="./css/jackpot.css" />
     <link rel="stylesheet" href="./css/songLyrics.css" />
+    <link rel="stylesheet" href="./css/heartBeat.css" />
   </head>
   <body>
     <div>
@@ -190,14 +191,50 @@
       </div>
     </div>
     <!-- -------------- -->
+    <!--  -->
+    <div class="content">
+      <div class="topicHeadingMain">
+        <img src="./public/heart-eyes.png" alt="" />
+        <h3>
+          <span>Wanna feel my heart ?</span>
+        </h3>
+      </div>
+      <div class="topicHeadingContent">
+        <p>
+          It may sound funny, but my heartbeat quickens whenever you say
+          something loving to me. Below is a demonstration of how my heart's
+          oscillations change when you speak sweetly to me.
+        </p>
+      </div>
+      <div class="heartBeat">
+        <div class="heart">❤️</div>
+        <div class="bpm">Heart Rate: <span id="bpm">70</span> BPM</div>
+        <div class="buttons">
+          <button onclick="increaseHeartRate(200)">I LOVE YOU</button>
+          <button onclick="increaseHeartRate(220)">I MISS YOU</button>
+          <button onclick="increaseHeartRate(240)">
+            I WISH TO BE WITH YOU
+          </button>
+        </div>
+        <canvas
+          class="canvasBeat"
+          id="heartbeatCanvas"
+          width="600"
+          height="200"
+        ></canvas>
+      </div>
+    </div>
+    <!--  -->
   </body>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.1"></script>
+  <script src="http://joeiddon.github.io/perlin/perlin.js"></script>
 
   <script src="./js/main.js"></script>
   <script src="./js/getCloser.js"></script>
   <script src="./js/jackpot.js"></script>
   <script src="./js/songLyrics.js"></script>
+  <script src="./js/heartBeat.js"></script>
 </html>
