@@ -37,7 +37,7 @@ const testimonials = [
     text: "🤌🏻  The way you rub my elbow skin, I LOVE IT 😂",
   },
   {
-    text: "🤌🏻 The way we become a mental coachs , when one of us goes down",
+    text: "🤌🏻 The way we become  mental coachs , when one of us goes down",
   },
   {
     text: "☕️ Tea time walk at your attha's house, there's something magical about that day!",
@@ -80,6 +80,21 @@ const testimonials = [
   },
   {
     text: "Your laugh is contagious man!",
+  },
+  {
+    text: "The way you get ready! So much thought put into it!",
+  },
+  {
+    text: "Your sense of justice, guess you got that from your father! 😉",
+  },
+  {
+    text: "Your voice sqeeeze, when you say, Yeeeeehhhheeeyyy! That's a melody!",
+  },
+  {
+    text: "The way you enjoy with your cousins!",
+  },
+  {
+    text: "I love how you value self-respect, it inspired me. Holding oneself with honor.",
   },
 ];
 
